@@ -1,0 +1,381 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>VBot Workplace G09</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap');
+:root{--ink:#0d2a33;--teal:#0f766e;--teal2:#14b8a6;--soft:#eef5f4;--line:#d5e2e0;--muted:#5b6b70;--amber:#f59e0b;--amberbg:#fff4dc;--red:#b42318;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff}
+body{font-family:'Be Vietnam Pro',Arial,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+@page{size:1280px 720px;margin:0}
+.slide{width:1280px;height:720px;position:relative;overflow:hidden;page-break-after:always;padding:46px 56px 40px;background:#fff}
+.slide.dark{background:var(--ink);color:#fff}
+h1{font-size:40px;font-weight:800;letter-spacing:-.5px;line-height:1.12}
+h2{font-size:30px;font-weight:800;letter-spacing:-.3px;line-height:1.15;margin-bottom:6px}
+.kicker{font:600 13px 'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px}
+.dark .kicker{color:var(--teal2)}
+.lead{font-size:17px;color:var(--muted);margin-bottom:18px;max-width:1080px}
+.dark .lead{color:#b9cfd0}
+.foot{position:absolute;left:56px;right:56px;bottom:16px;display:flex;justify-content:space-between;font-size:11px;color:#8a9a9e}
+.dark .foot{color:#6f8c90}
+.code{display:inline-block;font:700 11px 'JetBrains Mono',monospace;background:var(--amberbg);color:#8a5300;border-radius:4px;padding:1px 6px;vertical-align:middle}
+.grid{display:grid;gap:16px}
+.card{background:var(--soft);border-radius:12px;padding:16px 18px}
+.card h3{font-size:17px;font-weight:700;margin-bottom:8px}
+.card p,.card li{font-size:15px;line-height:1.5;color:#28434a}
+.card ul{padding-left:18px}
+.card li{margin-bottom:4px}
+.big{font-size:56px;font-weight:800;letter-spacing:-1.5px;line-height:1}
+.mid{font-size:30px;font-weight:800;letter-spacing:-.5px}
+.lbl{font-size:13px;color:var(--muted);margin-top:4px}
+.dark .lbl{color:#9fb8ba}
+table.t{width:100%;border-collapse:collapse;font-size:14.5px}
+table.t th{text-align:left;font-weight:700;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.5px;padding:7px 8px;border-bottom:2px solid var(--line)}
+table.t td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.35}
+table.t td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pill{display:inline-block;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600;background:#dff3ef;color:var(--teal);margin:2px 4px 2px 0}
+.dark .pill{background:#164049;color:#9ff0e3}
+.bar{height:22px;border-radius:5px;background:var(--teal)}
+.note{font-size:12px;color:var(--muted)}
+.step{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
+.num{flex:0 0 26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.step b{font-size:16px}
+.step span{font-size:14.5px;color:#3d5559}
+/* architecture */
+.arch{position:absolute;left:56px;top:150px;width:1168px;height:520px}
+.box{position:absolute;border-radius:10px;padding:8px 10px;font-size:12.5px;line-height:1.3;background:#fff;border:1.5px solid var(--line)}
+.box b{display:block;font-size:13.5px;margin-bottom:2px}
+.zone{position:absolute;border-radius:14px;border:2px dashed #9cc9c3;background:#f6fbfa}
+.zone .zt{position:absolute;top:-11px;left:14px;background:#fff;padding:0 8px;font:700 11.5px 'JetBrains Mono',monospace;color:var(--teal)}
+.box.ext{background:#f3f4f6;border-color:#d1d5db}
+.box.ai{background:#eef2ff;border-color:#c7d2fe}
+.box.sec{background:#fff7ed;border-color:#fed7aa}
+</style></head><body>
+<section class="slide dark">
+  <div class="kicker">Track 2 · Production Capstone · G09</div>
+  <h1 style="font-size:58px;margin-top:70px;max-width:980px">VBot Workplace: trợ lý AI văn phòng cho 2.000 người mỗi ngày</h1>
+  <p class="lead" style="font-size:21px;margin-top:18px">Google Cloud asia-southeast1 · Vertex AI · GKE Autopilot + gVisor · đủ 19 thành phần bắt buộc, đạt H1–H8</p>
+  <div style="display:flex;gap:70px;margin-top:70px">
+    <div><div class="big" style="color:#5eead4">$11,896.84</div><div class="lbl">tổng chi phí / tháng (USD, chưa VAT)</div></div>
+    <div><div class="big">$5.95</div><div class="lbl">mỗi người dùng hoạt động / tháng</div></div>
+    <div><div class="big">$10.82</div><div class="lbl">mỗi 1.000 request</div></div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span></span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Tóm tắt</div>
+  <h2>Rẻ nhờ routing model, không nhờ cắt thành phần</h2>
+  <p class="lead">$11,896.84/tháng = $5,285 LLM (44%) + $4,200 nhân sự (35%) + $2,412 hạ tầng còn lại. Mọi con số lấy từ một mô hình sizing duy nhất, khớp dòng TOTAL trong báo giá.</p>
+  <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+    <div class="card"><h3>1 · API theo cấp, không tự host GPU</h3><p>Flash-Lite cho email/tài liệu, gpt-oss-120b cho code và lập kế hoạch, Gemini 3.8 Flash làm model tham chiếu và leo thang. Tiết kiệm <b>$21,538</b>/tháng so với dùng model tham chiếu cho mọi request.</p></div>
+    <div class="card"><h3>2 · Một cluster, cô lập bằng gVisor</h3><p>GKE Autopilot regional 3 zone chạy API, gateway, connector, policy và sandbox. Code của agent chạy trong pod gVisor không egress, 80% trên Spot Pod: sandbox chỉ <b>$224</b>/tháng.</p></div>
+    <div class="card"><h3>3 · Dữ liệu tách theo người dùng</h3><p>Cloud SQL HA + pgvector lọc theo ACL gốc và user_id, workspace GCS multi-region ASIA với khóa riêng, token OAuth ủy nhiệm bọc bằng khóa HSM. RTO 4 giờ, RPO 1 giờ.</p></div>
+  </div>
+  <div style="margin-top:22px">
+    <div class="note" style="margin-bottom:6px">Ràng buộc cứng</div>
+    <span class="pill">H1 một cloud, Vertex AI qua Private Google Access</span><span class="pill">H2 SSO OIDC/SAML + MFA, OPA, OAuth ủy nhiệm</span><span class="pill">H3 gVisor, deny egress</span><span class="pill">H4 Model Armor + xác nhận hành động ghi</span><span class="pill">H5 CMEK, DLP, audit 12 tháng</span><span class="pill">H6 p95 TTFT ≤ 3 giây, agent ≤ 10 phút</span><span class="pill">H7 multi-AZ, RTO 4h/RPO 1h</span><span class="pill">H8 cổng eval ≥ 95%, quota + ngân sách</span>
+  </div>
+  <div style="margin-top:26px">
+    <div class="note" style="margin-bottom:8px">Cơ cấu $11,896.84/tháng</div>
+    <div style="display:flex;height:46px;border-radius:8px;overflow:hidden;font-size:14px;font-weight:700;color:#fff">
+      <div style="width:44.42%;background:#0f766e;display:flex;align-items:center;padding-left:12px">LLM $5,285</div>
+      <div style="width:35.30%;background:#0d2a33;display:flex;align-items:center;padding-left:12px">Nhân sự $4,200</div>
+      <div style="flex:1;background:#f59e0b;display:flex;align-items:center;padding-left:12px;color:#3b2600">Hạ tầng $2,412</div>
+    </div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>2</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Giả định và ước lượng tải</div>
+  <h2>Từ 2.000 DAU ra 1,1 triệu request và 12,3 tỷ token mỗi tháng</h2>
+  <div class="grid" style="grid-template-columns:400px 1fr;gap:28px;margin-top:14px">
+    <div>
+      <div class="step"><div class="num">1</div><div><b>2.000 × 25 req × 22 ngày = 1.100.000 req/tháng</b><br><span>25 req/người/ngày gồm cả hỏi lại; khớp mức REQ_PER_USER của đề</span></div></div>
+      <div class="step"><div class="num">2</div><div><b>Cao điểm 2,5 req/s, đỉnh 5 req/s</b><br><span>18% request/ngày rơi vào 9–10h; × 2 đỉnh theo phút; ~50 phiên streaming đồng thời</span></div></div>
+      <div class="step"><div class="num">3</div><div><b>11.142 token vào, 1.741 token ra / req</b><br><span>27.855 token vào/s, 4.352 token ra/s giờ cao điểm</span></div></div>
+      <div class="step"><div class="num">4</div><div><b>525.800 lượt sandbox/tháng</b><br><span>45 giây × 1 vCPU/2 GiB = 6.572 vCPU-giờ</span></div></div>
+      <div class="step"><div class="num">5</div><div><b>Lưu trữ</b><br><span>Workspace 2.000 GiB (TB 1 GB/người, quota 10 GB) · KB 300k tài liệu = 2,4M vector (9,2 GiB) · chat 12 tháng 101 GiB · 1,8M lệnh gọi connector</span></div></div>
+    </div>
+    <div>
+      <table class="t"><tr><th>Cấp tác vụ</th><th style="text-align:right">Tỉ lệ</th><th style="text-align:right">Req/tháng</th><th style="text-align:right">Token vào</th><th style="text-align:right">Token ra</th><th style="text-align:right">Sandbox</th><th style="text-align:right">LLM/tháng</th></tr><tr><td>L1 Email và hỏi đáp</td><td class='n'>52%</td><td class='n'>572.000</td><td class='n'>3.500</td><td class='n'>350</td><td class='n'>0,0</td><td class='n'>$789</td></tr><tr><td>L2 Tài liệu và slide</td><td class='n'>22%</td><td class='n'>242.000</td><td class='n'>9.000</td><td class='n'>2.200</td><td class='n'>0,5</td><td class='n'>$1,751</td></tr><tr><td>L3 Dữ liệu và code</td><td class='n'>12%</td><td class='n'>132.000</td><td class='n'>24.600</td><td class='n'>4.405</td><td class='n'>2,5</td><td class='n'>$949</td></tr><tr><td>L4 Agent dự án</td><td class='n'>9%</td><td class='n'>99.000</td><td class='n'>46.000</td><td class='n'>4.400</td><td class='n'>0,2</td><td class='n'>$759</td></tr><tr><td>L5 Thiết kế</td><td class='n'>5%</td><td class='n'>55.000</td><td class='n'>5.000</td><td class='n'>3.000</td><td class='n'>1,0</td><td class='n'>$1,037</td></tr>
+      <tr><td><b>Tổng</b></td><td class='n'>100%</td><td class='n'><b>1.100.000</b></td><td class='n'>12,26 tỷ</td><td class='n'>1,91 tỷ</td><td class='n'></td><td class='n'><b>$5,285</b></td></tr></table>
+      <p class="note" style="margin-top:10px">Token/req gộp mọi lần gọi LLM: system prompt, RAG, lịch sử, các bước agent và phần leo thang. Cache ngầm 25–60% prefix theo cấp. Chi tiết công thức ở sheet GiaDinh của báo giá.</p>
+      <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:16px">
+        <div class="card"><h3>Mạng</h3><p>LB 299 GiB/tháng (80 KB/req + 5 MB file/người/ngày); egress tới người dùng ~202 GiB</p></div>
+        <div class="card"><h3>Log, audit</h3><p>App + GKE 40 GiB/tháng; audit ~3,1 GiB/tháng, giữ 12 tháng</p></div>
+        <div class="card"><h3>Ảnh cấp 5</h3><p>40% request thiết kế cần ảnh: 22.000 ảnh 1K/tháng, quota 15 ảnh/người</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>3</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Kiến trúc tổng thể</div>
+  <h2>Một region, ba zone, mỗi hộp là một dòng báo giá</h2>
+  <p class="lead" style="margin-bottom:0">asia-southeast1 (Singapore): gần Việt Nam, đủ dịch vụ; model gọi qua Vertex AI Global endpoint trong mạng Google.</p>
+  <div class="arch">
+    <svg width="1168" height="520" style="position:absolute;left:0;top:0" fill="none" stroke="#7aa9a3" stroke-width="2">
+      <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="#7aa9a3"/></marker></defs>
+      <path d="M120 70 H178" marker-end="url(#a)"/><path d="M120 190 H178" marker-end="url(#a)"/>
+      <path d="M346 120 H392" marker-end="url(#a)"/>
+      <path d="M868 66 H930" marker-end="url(#a)"/><path d="M868 186 H930" marker-end="url(#a)"/>
+      <path d="M868 300 H930" marker-end="url(#a)"/>
+      <path d="M630 330 V378" marker-end="url(#a)"/>
+    </svg>
+    <div class="box ext" style="left:0;top:40px;width:120px"><b>Nhân viên</b>Web, add-in Outlook/Gmail</div>
+    <div class="box ext" style="left:0;top:160px;width:120px"><b>IdP tập đoàn</b>Entra ID, Google Workspace, MFA</div>
+    <div class="box sec" style="left:180px;top:20px;width:166px"><b>Cloud Armor + LB</b><span class="code">network</span> <span class="code">load_balancer</span><br>WAF, TLS, rate limit</div>
+    <div class="box sec" style="left:180px;top:140px;width:166px"><b>Identity Platform</b><span class="code">authn</span><br>OIDC/SAML broker</div>
+    <div class="zone" style="left:392px;top:16px;width:476px;height:316px"><span class="zt">GKE Autopilot regional · 3 zone · compute</span></div>
+    <div class="box" style="left:408px;top:40px;width:212px"><b>API + orchestrator</b><span class="code">compute</span><br>chat streaming, agent loop, 2→6 pod</div>
+    <div class="box" style="left:640px;top:40px;width:212px"><b>LLM gateway LiteLLM</b><span class="code">gateway</span><br>routing, quota, retry, fallback, log token</div>
+    <div class="box" style="left:408px;top:126px;width:212px"><b>Policy OPA</b><span class="code">authz</span><br>RBAC/ABAC, ACL tài liệu</div>
+    <div class="box" style="left:640px;top:126px;width:212px"><b>Connector service</b><span class="code">connectors</span><br>OAuth ủy nhiệm, webhook, sync KB</div>
+    <div class="box sec" style="left:408px;top:212px;width:444px"><b>Sandbox pool gVisor (Spot)</b><span class="code">sandbox</span> chạy code agent, xuất DOCX/XLSX/PPTX, render sơ đồ · deny egress · mount workspace của đúng 1 user · hủy sau khi chạy</div>
+    <div class="box ai" style="left:930px;top:20px;width:238px"><b>Vertex AI</b><span class="code">llm</span> <span class="code">embedding</span><br>Gemini 3.1 Flash-Lite, Gemini 3.8 Flash, gpt-oss-120b, Flash-Lite Image, Gemini Embedding</div>
+    <div class="box sec" style="left:930px;top:146px;width:238px"><b>Model Armor + SDP + eval</b><span class="code">governance</span><br>guardrail, prompt injection, DLP, audit</div>
+    <div class="box ext" style="left:930px;top:262px;width:238px"><b>SaaS qua Cloud NAT</b><span class="code">network</span><br>Gmail, Drive, Outlook, M365, Teams, Notion, Jira, Confluence</div>
+    <div class="box" style="left:392px;top:380px;width:150px"><b>Cloud SQL HA</b><span class="code">database</span> <span class="code">vector_db</span><br>PostgreSQL + pgvector</div>
+    <div class="box" style="left:556px;top:380px;width:150px"><b>Redis HA + Pub/Sub</b><span class="code">cache_queue</span><br>phiên, rate limit, hàng đợi agent</div>
+    <div class="box" style="left:720px;top:380px;width:148px"><b>GCS ASIA</b><span class="code">object_storage</span><br>workspace riêng</div>
+    <div class="box sec" style="left:180px;top:270px;width:166px"><b>KMS + Secret Manager</b><span class="code">secrets_kms</span><br>CMEK, token vault HSM</div>
+    <div class="box" style="left:180px;top:380px;width:196px"><b>Backup / DR</b><span class="code">backup_dr</span><br>backup mỗi giờ sang asia-southeast2</div>
+    <div class="box" style="left:0;top:270px;width:166px"><b>Observability</b><span class="code">monitoring</span><br>Logging, Prometheus, Trace</div>
+    <div class="box" style="left:0;top:380px;width:166px"><b>CI/CD + staging</b><span class="code">cicd</span><br>Cloud Build, Artifact Registry, Terraform</div>
+    <div class="box" style="left:930px;top:380px;width:238px"><b>Vận hành + support</b><span class="code">ops_labor</span> <span class="code">licenses</span><br>1,5 FTE, Standard Support</div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>4</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Luồng một request</div>
+  <h2>"Tóm tắt thread này và soạn trả lời" đi qua 9 bước</h2>
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:34px;margin-top:16px">
+    <div>
+      <div class="step"><div class="num">1</div><div><b>SSO</b> <span class="code">authn</span><br><span>Identity Platform chuyển sang Entra ID/Google, MFA theo Conditional Access, cấp phiên 8 giờ</span></div></div>
+      <div class="step"><div class="num">2</div><div><b>Cloud Armor → LB → API</b> <span class="code">load_balancer</span><br><span>WAF, rate limit theo IP; API kiểm quota user trong Redis</span></div></div>
+      <div class="step"><div class="num">3</div><div><b>OPA</b> <span class="code">authz</span><br><span>vai trò + đơn vị + cấp tác vụ được phép; danh sách tool cho phiên này</span></div></div>
+      <div class="step"><div class="num">4</div><div><b>Connector đọc thread bằng token của chính user</b> <span class="code">connectors</span><br><span>giải mã refresh token qua KMS, scope gmail.readonly; KB chung lọc theo ACL trong pgvector</span></div></div>
+      <div class="step"><div class="num">5</div><div><b>Model Armor quét prompt + nội dung email</b> <span class="code">governance</span><br><span>đánh dấu nội dung ngoài là dữ liệu, không phải chỉ dẫn</span></div></div>
+    </div>
+    <div>
+      <div class="step"><div class="num">6</div><div><b>Gateway chọn model theo cấp</b> <span class="code">gateway</span><br><span>semantic router (embedding) → Gemini 3.1 Flash-Lite; khó → Gemini 3.8 Flash</span></div></div>
+      <div class="step"><div class="num">7</div><div><b>Stream câu trả lời</b> <span class="code">llm</span><br><span>Model Armor quét output; ghi token + chi phí theo user và đơn vị</span></div></div>
+      <div class="step"><div class="num">8</div><div><b>Hành động ghi cần xác nhận</b><br><span>gửi email, tạo ticket, xóa file: hiện bản nháp, user bấm xác nhận; DLP che PII trước khi gửi</span></div></div>
+      <div class="step"><div class="num">9</div><div><b>Audit + lưu lịch sử</b> <span class="code">database</span><br><span>Cloud SQL (chat, memory theo user_id), audit log 12 tháng</span></div></div>
+      <div class="card" style="margin-top:12px;background:#eef2ff"><h3>Tác vụ nền cấp 3–4</h3><p>API → Pub/Sub → worker agent (gpt-oss lập kế hoạch, Flex) → sandbox gVisor / connector → kết quả vào workspace → thông báo qua Chat/email. Retry 3 lần, hủy được, timeout 10 phút.</p></div>
+      <div class="card" style="margin-top:12px"><h3>Ngân sách p95 TTFT ≤ 3 giây (H6)</h3><p>auth + quota 80 ms · OPA 10 ms · connector 600 ms · pgvector 120 ms · Model Armor 200 ms · gateway 20 ms · TTFT model ~1.000 ms → <b>~2,0 giây</b>, còn 1 giây dự phòng.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>5</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Model và routing</div>
+  <h2>Model tham chiếu Gemini 3.8 Flash, chỉ dùng khi model rẻ không đạt</h2>
+  <table class="t" style="margin-top:14px">
+    <tr><th>Cấp</th><th>Model chính</th><th>Leo thang</th><th>Lý do</th><th style="text-align:right">Giá /1M token (vào/ra)</th><th style="text-align:right">USD/tháng</th></tr>
+    <tr><td>1 Email, hỏi đáp</td><td>Gemini 3.1 Flash-Lite</td><td>5% → 3.8 Flash (router)</td><td>câu ngắn, tiếng Việt tốt, TTFT thấp</td><td class="n">$0.25 / $1.50</td><td class="n">$789</td></tr>
+    <tr><td>2 Tài liệu, slide</td><td>Gemini 3.1 Flash-Lite</td><td>10% → 3.8 Flash</td><td>văn bản dài; xuất file trong sandbox</td><td class="n">$0.25 / $1.50</td><td class="n">$1,751</td></tr>
+    <tr><td>3 Dữ liệu, code</td><td>gpt-oss-120b</td><td>25% thử lại kèm log lỗi; 8% → 3.8 Flash</td><td>reasoning + code mạnh, có test trong sandbox để tự kiểm</td><td class="n">$0.09 / $0.36</td><td class="n">$949</td></tr>
+    <tr><td>4 Agent dự án</td><td>gpt-oss-120b lập kế hoạch, Flash-Lite thực thi</td><td>15% planner → 3.8 Flash; 90% Flex</td><td>chạy nền, chịu được trễ Flex/Batch</td><td class="n">Flex $0.125 / $0.75</td><td class="n">$759</td></tr>
+    <tr><td>5 Thiết kế</td><td>Flash-Lite sinh HTML/SVG/Mermaid; Flash-Lite Image</td><td>—</td><td>sơ đồ, mockup render bằng code; ảnh 1K $0.0336</td><td class="n">$0.25 / $1.50</td><td class="n">$1,037</td></tr>
+  </table>
+  <div class="grid" style="grid-template-columns:1fr 1fr 1fr;margin-top:18px">
+    <div class="card"><h3>Đo chất lượng (H8)</h3><p>Bộ test vàng 300 case mỗi cấp, chấm bằng LLM-judge (Gemini 3.8 Flash) + 10% người duyệt. Model rẻ phải đạt ≥ 95% điểm của model tham chiếu mới được bật.</p></div>
+    <div class="card"><h3>Không tự host</h3><p>Toàn bộ phần gpt-oss qua API chỉ $606/tháng; riêng phụ phí 2 GPU H100 trên Autopilot (HA) đã $2,107/tháng, chưa kể máy GPU. Tự host chỉ đáng xét khi phần gpt-oss tăng quá ~3,5 lần.</p></div>
+    <div class="card"><h3>Giá chuẩn, không ưu đãi</h3><p>Gemini 3.8 Flash tính theo giá Standard $1.50/$7.50 (áp dụng từ 01/2027), không dùng mức giá giới thiệu đến hết 2026.</p></div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>6</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Lý do chọn công nghệ</div>
+  <h2>Mỗi lựa chọn lớn so ít nhất hai phương án, có số</h2>
+  <table class="t" style="margin-top:14px">
+    <tr><th style="width:150px">Quyết định</th><th>Chọn</th><th>Phương án loại</th><th>Số liệu quyết định</th></tr>
+    <tr><td>Phục vụ LLM</td><td><b>API Vertex AI, routing 3 model</b></td><td>Tự host gpt-oss trên H100; mọi request dùng Gemini 3.8 Flash</td><td>LLM $5,285 so với $26,823 nếu không routing; tự host ≥ $2,107 chỉ riêng phụ phí GPU</td></tr>
+    <tr><td>Endpoint model</td><td><b>Global endpoint</b></td><td>Regional asia-southeast1</td><td>Gemini 3.x và gpt-oss chưa có regional Singapore; giá non-global cao hơn 10%. Dữ liệu lưu trữ vẫn ở Singapore</td></tr>
+    <tr><td>Compute</td><td><b>GKE Autopilot</b></td><td>GKE Standard tự quản node; VM riêng cho sandbox</td><td>Trả theo pod: compute + gateway + sandbox $511; gVisor bật sẵn trên Autopilot; không phải vá node → giữ 1,5 FTE</td></tr>
+    <tr><td>Sandbox</td><td><b>gVisor + Spot Pod</b></td><td>MicroVM (Kata) cần nested virtualization; on-demand</td><td>gVisor khởi động &lt; 200 ms (giữ TTFT); Spot rẻ hơn 70% → tiết kiệm $254/tháng</td></tr>
+    <tr><td>Vector DB</td><td><b>pgvector trong Cloud SQL HA</b></td><td>Vector Search managed riêng</td><td>2,4M vector = 9,2 GiB, chỉ thêm $9.52/tháng SSD; lọc ACL bằng SQL cùng giao dịch, không phải đồng bộ quyền sang hệ thứ hai</td></tr>
+    <tr><td>Workspace</td><td><b>GCS multi-region ASIA</b></td><td>Regional Singapore + job sao chép DR</td><td>$0.026 so với $0.020/GiB nhưng có sẵn bản sao 2 vùng (RPO ≤ 1 giờ) → không cần pipeline DR riêng</td></tr>
+    <tr><td>LLM gateway</td><td><b>LiteLLM OSS trên GKE</b></td><td>Apigee; gọi thẳng SDK</td><td>$85/tháng, có budget/quota theo user và team, fallback, API kiểu OpenAI → đổi nhà cung cấp không sửa app</td></tr>
+  </table>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>7</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Connectors và phân quyền</div>
+  <h2>Agent chỉ thấy những gì chính người dùng thấy</h2>
+  <div class="grid" style="grid-template-columns:1.1fr 1fr;gap:26px;margin-top:14px">
+    <div>
+      <table class="t"><tr><th>Connector</th><th>Scope tối thiểu (OAuth ủy nhiệm)</th></tr>
+        <tr><td>Gmail, Calendar</td><td>gmail.readonly, gmail.compose (gửi chỉ sau khi user xác nhận), calendar.events</td></tr>
+        <tr><td>Drive, Docs/Sheets/Slides</td><td>drive.file + drive.readonly theo file được chọn</td></tr>
+        <tr><td>Outlook, OneDrive/SharePoint, Teams</td><td>Mail.ReadWrite, Files.Read, Sites.Read.All (delegated), Chat.Read</td></tr>
+        <tr><td>Jira, Confluence</td><td>read:jira-work, write:jira-work, read/write:confluence-content</td></tr>
+        <tr><td>Notion</td><td>public integration, user chọn trang chia sẻ</td></tr>
+      </table>
+      <p class="note" style="margin-top:8px">Không có tài khoản dịch vụ đọc toàn tập đoàn. Gửi email, tạo ticket, sửa trang luôn qua bước người dùng xác nhận.</p>
+    </div>
+    <div class="grid" style="gap:12px">
+      <div class="card"><h3>Token vault <span class="code">secrets_kms</span></h3><p>Refresh token mã hóa bằng DEK riêng từng user, DEK bọc bởi khóa HSM trong Cloud KMS; chỉ service account của connector có quyền decrypt, kèm AAD = user_id. Access token chỉ sống trong RAM, 60 phút.</p></div>
+      <div class="card"><h3>ACL theo quyền gốc <span class="code">authz</span></h3><p>Khi index KB chung, lưu danh sách principal của tài liệu nguồn vào từng chunk; truy vấn pgvector luôn có điều kiện principal ∈ nhóm của user (đồng bộ từ IdP). Mở tài liệu: kiểm lại bằng token của user.</p></div>
+      <div class="card"><h3>RBAC/ABAC</h3><p>OPA: vai trò × đơn vị × cấp tác vụ × độ nhạy dữ liệu. Ví dụ: cấp 4 chỉ cho nhóm dự án, dữ liệu "Mật" không gửi ra connector ngoài.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>8</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Workspace riêng và sandbox</div>
+  <h2>Agent của A không đọc được file của B, kể cả khi code bị chiếm</h2>
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:26px;margin-top:16px">
+    <div class="card"><h3>Workspace (H3) <span class="code">object_storage</span> <span class="code">database</span></h3><ul>
+      <li>GCS prefix <b>ws/&lt;user_id&gt;/</b>; app truy cập bằng signed URL 5 phút do backend cấp sau khi kiểm phiên</li>
+      <li>Mỗi user một DEK (envelope encryption, CMEK); quota 10 GB kiểm ở API</li>
+      <li>Chat, bộ nhớ dài hạn trong PostgreSQL với Row-Level Security theo user_id</li>
+      <li>Kết quả tìm kiếm luôn lọc user_id + ACL trước khi xếp hạng</li>
+      <li>Lifecycle: file tạm 30 ngày, chat 12 tháng, xóa theo yêu cầu</li></ul></div>
+    <div class="card"><h3>Sandbox gVisor <span class="code">sandbox</span></h3><ul>
+      <li>runtimeClassName: gvisor trên GKE Autopilot; kernel chạy trong userspace</li>
+      <li>NetworkPolicy deny-all egress; không tới VPC nội bộ, metadata server hay internet</li>
+      <li>automountServiceAccountToken: false; KSA riêng không gắn quyền IAM nào</li>
+      <li>Chỉ mount bản sao file của đúng user (sidecar tải theo job), ghi kết quả ngược qua API</li>
+      <li>Giới hạn 1 vCPU, 2 GiB, 120 giây; pod bị hủy ngay khi xong</li></ul></div>
+  </div>
+  <div class="card" style="margin-top:16px;background:#fff4dc"><p><b>Code cố thoát ra node hoặc gọi metadata endpoint?</b> Syscall bị gVisor chặn trước kernel host; gói tin tới 169.254.169.254 bị NetworkPolicy chặn; pod không có credential; node chỉ có IAM tối thiểu; sau 120 giây pod bị kill. 525.800 lượt/tháng tốn $224.</p></div>
+  <div style="display:flex;align-items:center;gap:6px;margin-top:18px;font-size:13px;font-weight:600">
+    <span class="pill" style="font-size:12.5px;white-space:nowrap">1 · Agent của A tạo job</span>→<span class="pill" style="font-size:12.5px;white-space:nowrap">2 · Pub/Sub</span>→<span class="pill" style="font-size:12.5px;white-space:nowrap">3 · Pod gVisor mới, Spot</span>→<span class="pill" style="font-size:12.5px;white-space:nowrap">4 · Sidecar chép ws/A/ cần dùng</span>→<span class="pill" style="font-size:12.5px;white-space:nowrap">5 · Chạy ≤ 120 giây</span>→<span class="pill" style="font-size:12.5px;white-space:nowrap">6 · Kết quả về ws/A/, pod bị xóa</span>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>9</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">AI và data governance</div>
+  <h2>Email chứa lệnh ẩn "gửi toàn bộ hợp đồng ra ngoài": bị chặn ở 4 lớp</h2>
+  <div class="grid" style="grid-template-columns:repeat(4,1fr);margin-top:16px">
+    <div class="card"><h3>1 · Tách dữ liệu và chỉ dẫn</h3><p>Nội dung connector được bọc như dữ liệu không tin cậy; system prompt cấm làm theo chỉ dẫn trong dữ liệu.</p></div>
+    <div class="card"><h3>2 · Model Armor</h3><p>Quét prompt injection, jailbreak, URL độc, PII cho prompt, nội dung connector và output. $432/tháng cho cả khối governance.</p></div>
+    <div class="card"><h3>3 · Xác nhận hành động ghi</h3><p>Gửi email, tạo ticket, xóa file luôn hiện bản nháp + người nhận cho user bấm xác nhận; tool gửi ra ngoài domain bị OPA chặn với dữ liệu "Mật".</p></div>
+    <div class="card"><h3>4 · DLP + egress</h3><p>Sensitive Data Protection che PII trước khi gửi; sandbox không có egress; NAT chỉ mở cho pod connector tới domain SaaS.</p></div>
+  </div>
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:26px;margin-top:18px">
+    <div class="card"><h3>Data governance (H5)</h3><ul>
+      <li>Mã hóa lúc lưu bằng CMEK (KMS), lúc truyền bằng TLS 1.2+</li>
+      <li>Phân loại dữ liệu khi index: Công khai / Nội bộ / Mật</li>
+      <li>Audit log 12 tháng: log bucket khóa retention + Archive có bucket lock</li>
+      <li>Vertex AI không dùng dữ liệu khách hàng để huấn luyện; tắt data caching cho dữ liệu Mật</li></ul></div>
+    <div class="card"><h3>Cổng eval (H4, H8)</h3><ul>
+      <li>Mọi thay đổi model hoặc prompt chạy qua Cloud Build: 6.000 case, LLM-judge Flex</li>
+      <li>Chặn deploy nếu điểm &lt; 95% model tham chiếu hoặc tỉ lệ vượt guardrail tăng</li>
+      <li>Canary 5% người dùng trong 24 giờ trước khi bật toàn bộ</li></ul></div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>10</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">HA, backup, DR</div>
+  <h2>Mất một zone lúc 10 giờ sáng: người dùng thấy chậm khoảng 1 phút</h2>
+  <table class="t" style="margin-top:14px">
+    <tr><th>Thành phần</th><th>Cơ chế HA</th><th>Khi 1 zone mất điện</th><th>Mất dữ liệu</th></tr>
+    <tr><td>Cloud Armor + LB</td><td>Dịch vụ global, anycast</td><td>Không ảnh hưởng</td><td>—</td></tr>
+    <tr><td>GKE pod (API, gateway, connector)</td><td>≥ 2 replica trải 3 zone, control plane regional 99,95%</td><td>Pod còn lại nhận tải; Autopilot dựng pod mới 1–2 phút</td><td>Request đang stream bị retry</td></tr>
+    <tr><td>Cloud SQL</td><td>HA primary + standby khác zone</td><td>Failover tự động ~60 giây</td><td>0 (đồng bộ)</td></tr>
+    <tr><td>Redis</td><td>Standard tier, replica khác zone</td><td>Failover tự động</td><td>Cache/rate limit, dựng lại được</td></tr>
+    <tr><td>Pub/Sub, GCS ASIA, Vertex AI</td><td>Managed đa zone / đa vùng</td><td>Không ảnh hưởng; job agent tự retry</td><td>0</td></tr>
+  </table>
+  <div class="grid" style="grid-template-columns:repeat(3,1fr);margin-top:18px">
+    <div class="card"><h3>RPO 1 giờ</h3><p>Cloud SQL backup on-demand mỗi giờ + PITR 7 ngày, lưu ở asia-southeast2. GCS multi-region sao chép mặc định ~1 giờ.</p></div>
+    <div class="card"><h3>RTO 4 giờ</h3><p>Mất cả region: Terraform dựng lại cluster + restore Cloud SQL ở Jakarta (~2 giờ), đổi DNS. Không giữ môi trường chờ để tiết kiệm chi phí.</p></div>
+    <div class="card"><h3>Diễn tập hằng tháng</h3><p>Restore backup mới nhất vào instance tạm 4 giờ, chạy smoke test, ghi thời gian thực tế. Chi phí $46.35/tháng cho backup + diễn tập.</p></div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>11</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Monitoring và FinOps</div>
+  <h2>Biết chi phí theo từng người, cắt trước khi vượt ngân sách</h2>
+  <div class="grid" style="grid-template-columns:1fr 1fr 1fr;margin-top:16px">
+    <div class="card"><h3>Đo gì <span class="code">monitoring</span></h3><ul>
+      <li>p95 TTFT theo cấp, thời gian hoàn thành agent</li>
+      <li>Tỉ lệ lỗi, retry, fallback model, tỉ lệ leo thang</li>
+      <li>Token, USD theo user, đơn vị, cấp tác vụ (tag của LiteLLM)</li>
+      <li>Cache hit, Spot bị thu hồi, hàng đợi Pub/Sub</li>
+      <li>Vượt guardrail, hành động ghi bị từ chối</li></ul></div>
+    <div class="card"><h3>Cảnh báo</h3><ul>
+      <li>p95 TTFT &gt; 2,5 giây trong 10 phút</li>
+      <li>Lỗi 5xx &gt; 1%; agent quá 8 phút</li>
+      <li>Ngân sách tháng 50%, 80%, 100% (Cloud Billing budget + Pub/Sub)</li>
+      <li>Một user dùng &gt; 5 lần trung vị trong ngày</li></ul></div>
+    <div class="card"><h3>Quota và cách cắt</h3><ul>
+      <li>Mỗi người: 400k token/ngày, 20 lượt agent, 15 ảnh/tháng</li>
+      <li>Mỗi đơn vị: ngân sách USD/tháng trong gateway</li>
+      <li>Vượt 80%: ép routing về Flash-Lite, tắt leo thang</li>
+      <li>Vượt 100%: chỉ còn cấp 1–2, cần trưởng đơn vị duyệt</li></ul></div>
+  </div>
+  <div class="card" style="margin-top:16px;display:flex;gap:40px;align-items:center">
+    <div><div class="mid">$2.64</div><div class="lbl">LLM / DAU / tháng</div></div>
+    <div><div class="mid">$4.80</div><div class="lbl">LLM / 1.000 request</div></div>
+    <div><div class="mid">$51</div><div class="lbl">chi phí observability / tháng</div></div>
+    <p style="flex:1">Spend log của gateway lưu trong Cloud SQL, xuất báo cáo chi phí theo đơn vị hằng tuần cho trưởng bộ phận.</p>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>12</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Chi phí</div>
+  <h2>$11,896.84 mỗi tháng, $5.95 mỗi DAU</h2>
+  <p class="lead">USD chưa VAT, giá niêm yết trên trang Google Cloud ngày 16/10/2026; khớp dòng TOTAL trong G09_baogia.xlsx (41 dòng, mỗi dòng có ảnh chụp bằng chứng).</p>
+  <div class="grid" style="grid-template-columns:640px 1fr;gap:36px">
+    <div><div class="note" style="margin-bottom:10px">5 hạng mục lớn nhất</div><div style='display:flex;align-items:center;gap:12px;margin-bottom:10px'><div style='flex:0 0 150px;font-size:14px'>LLM (5 cấp)</div><div class='bar' style='width:430px'></div><div style='font-size:14px;font-weight:700'>$5,285</div></div><div style='display:flex;align-items:center;gap:12px;margin-bottom:10px'><div style='flex:0 0 150px;font-size:14px'>Nhân sự vận hành</div><div class='bar' style='width:341px'></div><div style='font-size:14px;font-weight:700'>$4,200</div></div><div style='display:flex;align-items:center;gap:12px;margin-bottom:10px'><div style='flex:0 0 150px;font-size:14px'>Cloud SQL HA</div><div class='bar' style='width:40px'></div><div style='font-size:14px;font-weight:700'>$501</div></div><div style='display:flex;align-items:center;gap:12px;margin-bottom:10px'><div style='flex:0 0 150px;font-size:14px'>Governance</div><div class='bar' style='width:35px'></div><div style='font-size:14px;font-weight:700'>$432</div></div><div style='display:flex;align-items:center;gap:12px;margin-bottom:10px'><div style='flex:0 0 150px;font-size:14px'>Support GCP</div><div class='bar' style='width:18px'></div><div style='font-size:14px;font-weight:700'>$224</div></div>
+      <p class="note" style="margin-top:8px">Còn lại $1,255 cho 16 thành phần: LB, NAT, Redis, Pub/Sub, GCS, KMS, IdP, monitoring, backup, CI/CD…</p></div>
+    <div><div class="note" style="margin-bottom:6px">Đòn bẩy tiết kiệm (so với khi không áp dụng)</div>
+      <table class="t"><tr><td>Routing theo cấp (Flash-Lite, gpt-oss) thay vì mọi request chạy Gemini 3.8 Flash</td><td class='n'><b>-$21,538</b></td></tr><tr><td>Prompt caching ngầm của Gemini (prefix hệ thống, ngữ cảnh agent)</td><td class='n'><b>-$847</b></td></tr><tr><td>Flex/Batch cho agent chạy nền cấp 4 và cổng eval</td><td class='n'><b>-$550</b></td></tr><tr><td>Spot Pod cho sandbox (80% lượt chạy)</td><td class='n'><b>-$254</b></td></tr><tr><td>CUD 1 năm cho pod nền + Cloud SQL HA</td><td class='n'><b>-$224</b></td></tr><tr><td>Scale theo giờ hành chính (burst pod, staging, warm pool tắt ngoài giờ)</td><td class='n'><b>-$472</b></td></tr></table>
+      <p class="note" style="margin-top:8px">Giả định cần chất vấn: cache 25–60% prefix, leo thang 5–15%, Spot 80%, Flex 90% cho agent nền.</p></div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>13</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Rủi ro và mở rộng</div>
+  <h2>DAU gấp đôi, hóa đơn tăng 1,69 lần</h2>
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:28px;margin-top:14px">
+    <div>
+      <div style="display:flex;gap:40px;margin-bottom:14px">
+        <div><div class="mid">$20,058</div><div class="lbl">4.000 DAU / tháng</div></div>
+        <div><div class="mid">$5.01</div><div class="lbl">mỗi DAU (giảm từ $5.95)</div></div>
+      </div>
+      <table class="t"><tr><th>Phần</th><th>Thay đổi</th></tr>
+        <tr><td>Tuyến tính</td><td>LLM, embedding, Model Armor, sandbox, egress, workspace</td></tr>
+        <tr><td>Bậc thang</td><td>Cloud SQL 4 → 8 vCPU khi &gt; 2.500 DAU; nhân sự 1,5 → 2 FTE</td></tr>
+        <tr><td>Gần cố định</td><td>Cluster fee, LB, KMS, staging, CI/CD, IdP theo MAU</td></tr>
+        <tr><td>Đổi cách phục vụ</td><td>Khi chi phí gpt-oss &gt; $2,107/tháng (~3,5 lần): đánh giá tự host trên GPU</td></tr>
+      </table>
+    </div>
+    <div>
+      <table class="t"><tr><th>Rủi ro</th><th>Tác động</th><th>Giảm thiểu</th></tr>
+        <tr><td>Giá token +30%</td><td class="n">+$1,405</td><td>routing vẫn tối ưu; quota cắt sớm</td></tr>
+        <tr><td>Giá token −50%</td><td class="n">−$2,341</td><td>API càng có lợi so với tự host</td></tr>
+        <tr><td>Phụ thuộc Vertex AI</td><td>đổi API</td><td>gateway kiểu OpenAI, eval set dùng lại cho nhà cung cấp mới</td></tr>
+        <tr><td>Global endpoint không cam kết vị trí xử lý</td><td>tuân thủ</td><td>dữ liệu lưu ở SG; dữ liệu Mật chỉ dùng model có regional</td></tr>
+        <tr><td>Flex/Spot bị trễ hoặc thu hồi</td><td>độ trễ</td><td>quay về Standard/on-demand sau 2 phút, đã tính 10–20%</td></tr>
+        <tr><td>Ước lượng token sai</td><td>±30% LLM</td><td>đo thực tế 2 tuần pilot, chỉnh quota</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>14</span></div>
+</section>
+<section class="slide dark">
+  <div class="kicker">Sẵn sàng hỏi đáp</div>
+  <h2 style="color:#fff">Câu trả lời ngắn cho 6 câu hội đồng hay hỏi</h2>
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:14px;margin-top:16px">
+    <div class="card" style="background:#123842"><h3 style="color:#fff">A đọc được file của B?</h3><p style="color:#cfe3e3">Không: prefix + DEK riêng, RLS user_id, index lọc ACL, token connector là của A, sandbox chỉ mount file của A.</p></div>
+    <div class="card" style="background:#123842"><h3 style="color:#fff">Email chứa lệnh ẩn?</h3><p style="color:#cfe3e3">Bị coi là dữ liệu, Model Armor gắn cờ, gửi ra ngoài cần user xác nhận, DLP che PII, sandbox không egress.</p></div>
+    <div class="card" style="background:#123842"><h3 style="color:#fff">Thoát sandbox, gọi metadata?</h3><p style="color:#cfe3e3">gVisor chặn syscall, NetworkPolicy chặn 169.254.169.254, không SA token, giới hạn 120 giây.</p></div>
+    <div class="card" style="background:#123842"><h3 style="color:#fff">DAU gấp đôi?</h3><p style="color:#cfe3e3">$20,058/tháng (×1,69); LLM tuyến tính, DB và nhân sự tăng bậc, phần nền gần cố định.</p></div>
+    <div class="card" style="background:#123842"><h3 style="color:#fff">Giá token ±?</h3><p style="color:#cfe3e3">+30% → +$1,405; −50% → −$2,341. Tự host chỉ hòa vốn khi tải gấp ~3,5 lần.</p></div>
+    <div class="card" style="background:#123842"><h3 style="color:#fff">Mất 1 AZ lúc 10 giờ?</h3><p style="color:#cfe3e3">SQL failover ~60 giây, pod dồn sang 2 zone còn lại, không mất dữ liệu đã commit; khớp RTO 4h, RPO 1h.</p></div>
+  </div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>15</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Phụ lục A · không tính vào 15 slide</div>
+  <h2>Báo giá theo component (TOTAL $11,896.84)</h2>
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:36px;margin-top:12px"><table class='t'><tr><th>Component</th><th style='text-align:right'>USD/tháng</th><th style='text-align:right'>%</th></tr><tr><td><span class='code'>llm</span></td><td class='n'>$5,284.72</td><td class='n'>44,4%</td></tr><tr><td><span class='code'>ops_labor</span></td><td class='n'>$4,200.00</td><td class='n'>35,3%</td></tr><tr><td><span class='code'>database</span></td><td class='n'>$501.02</td><td class='n'>4,2%</td></tr><tr><td><span class='code'>governance</span></td><td class='n'>$431.74</td><td class='n'>3,6%</td></tr><tr><td><span class='code'>licenses</span></td><td class='n'>$224.18</td><td class='n'>1,9%</td></tr><tr><td><span class='code'>sandbox</span></td><td class='n'>$223.55</td><td class='n'>1,9%</td></tr><tr><td><span class='code'>compute</span></td><td class='n'>$202.48</td><td class='n'>1,7%</td></tr><tr><td><span class='code'>cicd</span></td><td class='n'>$177.82</td><td class='n'>1,5%</td></tr><tr><td><span class='code'>object_storage</span></td><td class='n'>$96.24</td><td class='n'>0,8%</td></tr><tr><td><span class='code'>gateway</span></td><td class='n'>$85.23</td><td class='n'>0,7%</td></tr><tr><td><span class='code'>cache_queue</span></td><td class='n'>$83.55</td><td class='n'>0,7%</td></tr></table><table class='t'><tr><th>Component</th><th style='text-align:right'>USD/tháng</th><th style='text-align:right'>%</th></tr><tr><td><span class='code'>network</span></td><td class='n'>$70.18</td><td class='n'>0,6%</td></tr><tr><td><span class='code'>connectors</span></td><td class='n'>$64.74</td><td class='n'>0,5%</td></tr><tr><td><span class='code'>monitoring</span></td><td class='n'>$50.68</td><td class='n'>0,4%</td></tr><tr><td><span class='code'>backup_dr</span></td><td class='n'>$46.35</td><td class='n'>0,4%</td></tr><tr><td><span class='code'>embedding</span></td><td class='n'>$41.91</td><td class='n'>0,4%</td></tr><tr><td><span class='code'>authn</span></td><td class='n'>$36.75</td><td class='n'>0,3%</td></tr><tr><td><span class='code'>secrets_kms</span></td><td class='n'>$25.43</td><td class='n'>0,2%</td></tr><tr><td><span class='code'>load_balancer</span></td><td class='n'>$23.13</td><td class='n'>0,2%</td></tr><tr><td><span class='code'>authz</span></td><td class='n'>$17.62</td><td class='n'>0,1%</td></tr><tr><td><span class='code'>vector_db</span></td><td class='n'>$9.52</td><td class='n'>0,1%</td></tr></table></div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>A</span></div>
+</section>
+<section class="slide">
+  <div class="kicker">Phụ lục B · bằng chứng giá</div>
+  <h2>34 ảnh chụp trang giá chính thức, ngày 16/10/2026</h2>
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:24px;margin-top:8px"><table class='t' style='font-size:10.5px'><tr><td style='padding:3px 6px'><b>E01</b></td><td style='padding:3px 6px'>Vertex AI (Agent Platform) pricing, bảng Gemini 3 Standard: Gemini 3.8 Flash (giá chuẩn từ 01/2027) $1.50/$0.15/$7.50, Gemini 3.1 Flash-Lite $0.25/$0.025/$1.50, cột Global</td></tr><tr><td style='padding:3px 6px'><b>E02</b></td><td style='padding:3px 6px'>GKE pricing, Singapore: Autopilot vCPU $0.0549, RAM $0.0060729; Flexible CUD 1 năm; Spot</td></tr><tr><td style='padding:3px 6px'><b>E03</b></td><td style='padding:3px 6px'>Cloud SQL for PostgreSQL pricing, Singapore: vCPU/RAM/HA, SSD, backup, CUD 1 năm</td></tr><tr><td style='padding:3px 6px'><b>E04</b></td><td style='padding:3px 6px'>Memorystore for Redis pricing, Singapore: Standard tier M1</td></tr><tr><td style='padding:3px 6px'><b>E05</b></td><td style='padding:3px 6px'>Cloud Storage pricing, Asia (multi-region): Standard $0.026/GiB-tháng</td></tr><tr><td style='padding:3px 6px'><b>E06</b></td><td style='padding:3px 6px'>Network pricing, Singapore: Cloud Load Balancing 5 forwarding rule đầu $0.028/giờ, data processed $0.009/GiB</td></tr><tr><td style='padding:3px 6px'><b>E07</b></td><td style='padding:3px 6px'>Cloud NAT pricing: gateway theo số VM, IP, data processed</td></tr><tr><td style='padding:3px 6px'><b>E08</b></td><td style='padding:3px 6px'>Cloud Armor pricing: Standard policy, rule, request</td></tr><tr><td style='padding:3px 6px'><b>E09</b></td><td style='padding:3px 6px'>Cloud KMS pricing: key version SOFTWARE/HSM, cryptographic operations</td></tr><tr><td style='padding:3px 6px'><b>E10</b></td><td style='padding:3px 6px'>Secret Manager pricing: active secret version, access operations</td></tr><tr><td style='padding:3px 6px'><b>E11</b></td><td style='padding:3px 6px'>Identity Platform pricing: Tier 2 providers OIDC/SAML $0.015/MAU</td></tr><tr><td style='padding:3px 6px'><b>E12</b></td><td style='padding:3px 6px'>Google Cloud Observability pricing: Logging storage $0.50/GiB, retention $0.01/GiB-tháng</td></tr><tr><td style='padding:3px 6px'><b>E13</b></td><td style='padding:3px 6px'>Pub/Sub pricing: throughput $40/TiB</td></tr><tr><td style='padding:3px 6px'><b>E14</b></td><td style='padding:3px 6px'>Security Command Center pricing, mục Model Armor standalone $0.10/1M tokens</td></tr><tr><td style='padding:3px 6px'><b>E15</b></td><td style='padding:3px 6px'>Sensitive Data Protection (DLP) pricing: content inspection $3/GB</td></tr><tr><td style='padding:3px 6px'><b>E16</b></td><td style='padding:3px 6px'>Artifact Registry pricing: storage $0.10/GiB-tháng</td></tr><tr><td style='padding:3px 6px'><b>E17</b></td><td style='padding:3px 6px'>Cloud Build pricing: e2-standard-2 $0.006/phút</td></tr></table><table class='t' style='font-size:10.5px'><tr><td style='padding:3px 6px'><b>E18</b></td><td style='padding:3px 6px'>Google Cloud Customer Care: Standard Support 3% chi phí cloud (tối thiểu $29)</td></tr><tr><td style='padding:3px 6px'><b>E19</b></td><td style='padding:3px 6px'>Vertex AI locations, tab Global: Gemini 3.8 Flash, Gemini 3.1 Flash-Lite, Gemini 3.1 Flash-Lite Image có ở Global endpoint</td></tr><tr><td style='padding:3px 6px'><b>E20</b></td><td style='padding:3px 6px'>GKE Sandbox (gVisor) cho Autopilot và Standard: cô lập code không tin cậy</td></tr><tr><td style='padding:3px 6px'><b>E21</b></td><td style='padding:3px 6px'>Vertex AI pricing, bảng OpenAI models: gpt-oss-120b $0.09 in / $0.36 out mỗi 1M token</td></tr><tr><td style='padding:3px 6px'><b>E22</b></td><td style='padding:3px 6px'>Vertex AI pricing, bảng image: Gemini 3.1 Flash-Lite Image, image output $30/1M token (1120 token/ảnh 1K)</td></tr><tr><td style='padding:3px 6px'><b>E23</b></td><td style='padding:3px 6px'>Vertex AI pricing, bảng Embedding: Gemini Embedding $0.00015 / 1.000 token online</td></tr><tr><td style='padding:3px 6px'><b>E24</b></td><td style='padding:3px 6px'>Vertex AI pricing, tab Flex/Batch: Gemini 3.8 Flash $0.75/$3.75, Gemini 3.1 Flash-Lite $0.125/$0.75</td></tr><tr><td style='padding:3px 6px'><b>E25</b></td><td style='padding:3px 6px'>GKE pricing: cluster management fee $0.10 / cluster / giờ</td></tr><tr><td style='padding:3px 6px'><b>E26</b></td><td style='padding:3px 6px'>Cloud SQL pricing, Singapore, HA Storage: SSD $0.000652055/GiB-h, Backups (used) $0.000153425/GiB-h</td></tr><tr><td style='padding:3px 6px'><b>E27</b></td><td style='padding:3px 6px'>Cloud Storage pricing: inter-region replication, Asia (multi-region) $0.08/GiB</td></tr><tr><td style='padding:3px 6px'><b>E28</b></td><td style='padding:3px 6px'>Cloud Storage pricing: Class A/B operations cho bucket dual-region/multi-region</td></tr><tr><td style='padding:3px 6px'><b>E29</b></td><td style='padding:3px 6px'>Cloud Storage pricing, Singapore: Archive storage $0.0015/GiB-tháng</td></tr><tr><td style='padding:3px 6px'><b>E30</b></td><td style='padding:3px 6px'>Network pricing, Singapore: internet egress Premium tới Asia $0.12/GiB (0-1 TiB)</td></tr><tr><td style='padding:3px 6px'><b>E31</b></td><td style='padding:3px 6px'>Network pricing: data transfer giữa các zone trong cùng region $0.01/GiB</td></tr><tr><td style='padding:3px 6px'><b>E32</b></td><td style='padding:3px 6px'>Observability pricing: Managed Service for Prometheus $0.06/triệu sample</td></tr><tr><td style='padding:3px 6px'><b>E33</b></td><td style='padding:3px 6px'>Observability pricing: Cloud Trace $0.20/triệu span</td></tr><tr><td style='padding:3px 6px'><b>E34</b></td><td style='padding:3px 6px'>Cloud SQL pricing, Singapore, Storage (zonal, dùng cho staging): SSD $0.000326027/GiB-h</td></tr></table></div>
+  <div class="foot"><span>VBot Workplace · G09 · Production Capstone</span><span>B</span></div>
+</section></body></html>

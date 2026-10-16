@@ -1,0 +1,6 @@
+.venv/
+tools/node_modules/
+evidence/raw/
+model/out/
+__pycache__/
+.DS_Store
